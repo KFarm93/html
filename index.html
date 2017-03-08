@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kevin Farmer's Portfolio</title>
+    <script src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Lato|Raleway|Abel" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    $(document).ready(function () {
+      $("#madmousePic").hover(function() {
+        $("#left p").removeClass("fadeOutUp");
+        $("#left p").addClass("fadeInDown");
+        $("#left p").css("display", "block");
+        $("#left").css("margin-bottom", "70px");
+        $("#right").css("margin-bottom", "70px");
+        $("#madmouseTitle").css("text-decoration", "underline");
+      }, function() {
+        $("#left p").removeClass("fadeInDown");
+        $("#left p").addClass("fadeOutUp");
+        $("#left p").css("display", "none");
+        $("#left").css("margin-bottom", "0");
+        $("#right").css("margin-bottom", "0");
+        $("#madmouseTitle").css("text-decoration", "none");
+      });
+
+      $("#blackjackPic").hover(function() {
+        $("#right p").removeClass("fadeOutUp");
+        $("#right p").addClass("fadeInDown");
+        $("#right p").css("display", "block");
+        $("#right").css("margin-bottom", "70px");
+        $("#left").css("margin-bottom", "70px");
+        $("#blackjackTitle").css("text-decoration", "underline");
+      }, function() {
+        $("#right p").removeClass("fadeInDown");
+        $("#right p").addClass("fadeOutUp");
+        $("#right p").css("display", "none");
+        $("#right").css("margin-bottom", "0");
+        $("#left").css("margin-bottom", "0");
+        $("#blackjackTitle").css("text-decoration", "none");
+      });
+
+      $("#drawPic").hover(function() {
+        $("#left2 p").removeClass("fadeOutUp");
+        $("#left2 p").addClass("fadeInDown");
+        $("#left2 p").css("display", "block");
+	$("#drawTitle").css("text-decoration", "underline");
+      }, function() {
+        $("#left2 p").removeClass("fadeInDown");
+        $("#left2 p").addClass("fadeOutUp");
+        $("#left2 img").css("margin-top", "0");
+        $("#left2 p").css("display", "none");
+	$("#drawTitle").css("text-decoration", "none");
+      });
+
+      $("#moviesPic").hover(function() {
+        $("#right2 p").removeClass("fadeOutUp");
+        $("#right2 p").addClass("fadeInDown");
+        $("#right2 p").css("display", "block");
+	$("#movieTitle").css("text-decoration", "underline");
+      }, function() {
+        $("#right2 p").removeClass("fadeInDown");
+        $("#right2 p").addClass("fadeOutUp");
+        $("#right2").css("margin-bottom", "0");
+        $("#right2 p").css("display", "none");
+	$("#movieTitle").css("text-decoration", "none");
+      });
+    });
+    </script>
+  </head>
+  <body>
+
+    <div class="col-lg-12 headerBar">
+      <h1>Kevin Farmer</h1>
+    </div>
+
+    <div class="col-lg-12 navBar">
+      <a class="homeAndAbout" href="index.html" ui-sref-active="active">Projects</a>
+      <a class="homeAndAbout" href="about.html">About</a>
+      <ul>
+        <li><a href="https://github.com/KFarm93" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-farmer-b178033b?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></li>
+        <li><a href="mailto:farmekp0@sewanee.edu"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a></li>
+        <li><a href="pdfresume.pdf"><i class="fa fa-id-card-o fa-4x" aria-hidden="true"></i></a></li>
+       </ul>
+    </div>
+
+    <div class="container">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card buffer" id="left">
+          <h1 id="madmouseTitle">madmouse.io</h1>
+          <a href="http://madmouse.io"><img id="madmousePic" src="images/madmouse.png" alt="Image not found"></a>
+          <p class="card-text animated">A browser-based multiplayer video game I built with JavaScript, AngularJS 1, socket.IO, and more!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card buffer test" id="right">
+          <h1 id="blackjackTitle">Blackjack</h1>
+          <a href="http://casino-javin.surge.sh"><img id="blackjackPic" src="images/blackjack.png" alt="Image not found"></a>
+          <p class="card-text animated">A blackjack video game I built with a friend in JavaScript using JQuery!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card left" id="left2">
+          <h1 id="drawTitle">Draw Together</h1>
+          <p class="card-text animated">A multi-user drawing app using Socket.IO!</p>
+          <a href="https://drawtogether-nkyossocdc.now.sh/"><img id="drawPic" src="images/mushroom.png" alt="Image not found"></a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card right" id="right2">
+          <h1 id="movieTitle">Kev's Movie DB</h1>
+          <p class="card-text animated">A movie database built using themoviedb.org's API!</p>
+          <a href="http://kevs-movie-db.surge.sh"><img id="moviesPic" src="images/movies.png"  alt="Image not found"></a>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
