@@ -70,6 +70,8 @@ body {
   border: 0;
   height: 300px;
   width: 450px;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .card > a > img {
@@ -206,7 +208,7 @@ body {
   #right {
     float: left;
   }
-  
+
   #right2 {
     float: left;
   }
