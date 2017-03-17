@@ -45,6 +45,7 @@ body {
 .navBar .homeAndAbout {
   font-size: 3em;
   font-family: "Abel", Helvetica, sans-serif;
+  font-weight: bold;
   margin-left: 2%;
   margin-right: 2%;
   color: black;
@@ -92,6 +93,7 @@ body {
 
 .card h1 {
   font-family: "Abel", Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 @font-face {
