@@ -11,64 +11,57 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
     $(document).ready(function () {
-      $("#madmousePic").hover(function() {
+      $("#hearthzonePic").hover(function() {
         $("#left p").removeClass("fadeOutUp");
         $("#left p").addClass("fadeInDown");
         $("#left p").css("display", "block");
         $("#left").css("margin-bottom", "70px");
         $("#right").css("margin-bottom", "70px");
-        $("#madmouseTitle").css("text-decoration", "underline");
       }, function() {
         $("#left p").removeClass("fadeInDown");
         $("#left p").addClass("fadeOutUp");
         $("#left p").css("display", "none");
         $("#left").css("margin-bottom", "0");
         $("#right").css("margin-bottom", "0");
-        $("#madmouseTitle").css("text-decoration", "none");
       });
 
-      $("#blackjackPic").hover(function() {
+      $("#madmousePic").hover(function() {
         $("#right p").removeClass("fadeOutUp");
         $("#right p").addClass("fadeInDown");
         $("#right p").css("display", "block");
         $("#right").css("margin-bottom", "70px");
         $("#left").css("margin-bottom", "70px");
-        $("#blackjackTitle").css("text-decoration", "underline");
       }, function() {
         $("#right p").removeClass("fadeInDown");
         $("#right p").addClass("fadeOutUp");
         $("#right p").css("display", "none");
         $("#right").css("margin-bottom", "0");
         $("#left").css("margin-bottom", "0");
-        $("#blackjackTitle").css("text-decoration", "none");
       });
 
-      $("#drawPic").hover(function() {
+      $("#moviesPic").hover(function() {
         $("#left2 p").removeClass("fadeOutUp");
         $("#left2 p").addClass("fadeInDown");
         $("#left2 p").css("display", "block");
-	$("#drawTitle").css("text-decoration", "underline");
       }, function() {
         $("#left2 p").removeClass("fadeInDown");
         $("#left2 p").addClass("fadeOutUp");
         $("#left2 img").css("margin-top", "0");
         $("#left2 p").css("display", "none");
-	$("#drawTitle").css("text-decoration", "none");
       });
 
-      $("#moviesPic").hover(function() {
+      $("#blackjackPic").hover(function() {
         $("#right2 p").removeClass("fadeOutUp");
         $("#right2 p").addClass("fadeInDown");
         $("#right2 p").css("display", "block");
-	$("#movieTitle").css("text-decoration", "underline");
       }, function() {
         $("#right2 p").removeClass("fadeInDown");
         $("#right2 p").addClass("fadeOutUp");
         $("#right2").css("margin-bottom", "0");
         $("#right2 p").css("display", "none");
-	$("#movieTitle").css("text-decoration", "none");
       });
     });
+
     </script>
   </head>
   <body>
@@ -91,30 +84,30 @@
     <div class="container">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="card buffer" id="left">
+          <h1>Hearthzone</h1>
+          <a href="http://hearthzone.kevinfarmer.site"><img id="hearthzonePic" src="images/hz.png" alt="Image not found"></a>
+          <p class="card-text animated">A Hearthstone deck builder app built with Node.js, React, Redux, Express.js, and more!</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card buffer test" id="right">
           <h1>madmouse.io</h1>
           <a href="http://madmouse.io"><img id="madmousePic" src="images/madmouse.png" alt="Image not found"></a>
           <p class="card-text animated">A browser-based multiplayer video game I built with JavaScript, AngularJS 1, Socket.IO, and more!</p>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <div class="card buffer test" id="right">
-          <h1>Blackjack</h1>
-          <a href="http://kevinfarmer.site/blackjack"><img id="blackjackPic" src="images/blackjack.png" alt="Image not found"></a>
-          <p class="card-text animated">A blackjack video game I built with a friend in JavaScript using jQuery!</p>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="card left" id="left2">
-          <h1>Draw Together</h1>
-          <p class="card-text animated">A multi-user drawing app using Socket.IO!</p>
-          <a href="https://drawtogether-nkyossocdc.now.sh/"><img id="drawPic" src="images/mushroom.png" alt="Image not found"></a>
+          <h1>Kev's Movie DB</h1>
+          <p class="card-text animated">A movie database built using themoviedb.org's API!</p>
+          <a href="http://kevinfarmer.site/movie-app"><img id="moviesPic" src="images/movies.png" alt="Image not found"></a>
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="card right" id="right2">
-          <h1>Kev's Movie DB</h1>
-          <p class="card-text animated">A movie database built using themoviedb.org's API!</p>
-          <a href="http://kevinfarmer.site/movie-app"><img id="moviesPic" src="images/movies.png"  alt="Image not found"></a>
+          <h1>Blackjack</h1>
+          <p class="card-text animated">A blackjack video game I built with a friend in JavaScript using jQuery!</p>
+          <a href="http://kevinfarmer.site/blackjack"><img id="blackjackPic" src="images/blackjack.png"  alt="Image not found"></a>
         </div>
       </div>
     </div>
